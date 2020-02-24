@@ -3,3 +3,8 @@ $secondary:     green;
 
 $body-bg: hsl(0, 0%, 95%);
 $border-color: darken($body-bg, 5%);
+
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$headings-color: hsl(211, 30%, 30%);
+$headings-font-family: 'Rubik', sans-serif;
