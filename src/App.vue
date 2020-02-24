@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <div class="navbar-wrapper mb-5">
+      <div class="navbar-wrapper mb-4">
           <NavBar>
               <b-nav-item to="/" exact>Home</b-nav-item>
               <b-nav-item to="/about" exact>About</b-nav-item>
