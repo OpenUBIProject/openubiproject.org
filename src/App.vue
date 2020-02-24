@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-      <NavBar>
-        <b-nav-item to="/" exact>Home</b-nav-item>
-        <b-nav-item to="/about" exact>About</b-nav-item>
-      </NavBar>
+      <div class="navbar-wrapper mb-5">
+          <NavBar>
+              <b-nav-item to="/" exact>Home</b-nav-item>
+              <b-nav-item to="/about" exact>About</b-nav-item>
+          </NavBar>
+      </div>
       <div class="container">
           <router-view/>
       </div>

@@ -1,2 +1,5 @@
-$primary: #243665;
+$primary: hsl(223, 47%, 27%);
 $secondary:     green;
+
+$body-bg: hsl(0, 0%, 95%);
+$border-color: darken($body-bg, 5%);
