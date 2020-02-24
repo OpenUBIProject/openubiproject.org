@@ -4,7 +4,9 @@
         <b-nav-item to="/" exact>Home</b-nav-item>
         <b-nav-item to="/about" exact>About</b-nav-item>
       </NavBar>
-    <router-view/>
+      <div class="container">
+          <router-view/>
+      </div>
   </div>
 </template>
 

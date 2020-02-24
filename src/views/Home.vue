@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="home">
     <img class="logo" alt="OpenUBI Project logo" src="../assets/open-ubi-project-logo.svg">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
