@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/open-ubi-project-logo.svg">
+  <div class="container">
+    <img class="logo" alt="OpenUBI Project logo" src="../assets/open-ubi-project-logo.svg">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -16,3 +16,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.logo {
+  height: 10em;
+}
+</style>
