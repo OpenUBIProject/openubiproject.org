@@ -10,7 +10,9 @@
                     </b-navbar-nav>
                 </b-collapse>
 
-                <b-navbar-brand href="#">OpenUBI Project</b-navbar-brand>
+                <b-navbar-brand to="/">
+                    <img class="navbar-logo" src="../assets/open-ubi-project-logo-solid.svg" alt="OpenUBI Project logo">
+                </b-navbar-brand>
 
                 <b-collapse id="nav-collapse" is-nav>
                     <b-navbar-nav class="ml-auto">
@@ -32,6 +34,10 @@
 </script>
 
 <style lang="scss">
+.navbar-logo {
+    max-height: 55px;
+}
+
 .nav-link {
     font-size: 0.9rem;
 }
