@@ -7,6 +7,10 @@ body {
     font-size: 20px;
 }
 
+a:hover, :active {
+    text-decoration: none;
+}
+
 .card {
     border: 0;
     border-radius: 0;
@@ -14,10 +18,11 @@ body {
     box-shadow: 0 15px 15px 2px rgba(0, 0, 0, 0.05);
 
     .card-body {
-        padding: 1.25rem 1.75rem;
+        padding: 1.25rem 1.25rem;
 
         .card-title {
             font-weight: 300;
+            text-align: left;
         }
 
         .card-text {

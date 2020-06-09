@@ -7,24 +7,25 @@
       </b-card>
     </div>
     <div class="col-12 col-md-4">
-      <b-card
-              title="Implementing Nationwide Universal Basic Income"
-              tag="article"
-      >
-        <b-card-text>
-          <div>
-            This policy brief is a well-cited document that addresses:
-            <ul>
-              <li>advancements with work in the 21st century</li>
-              <li>why we need economic security</li>
-              <li>how technology enables UBI</li>
-              <li>best practices for creating UBI policies</li>
-            </ul>
-          </div>
-        </b-card-text>
-
-        <b-button href="https://github.com/OpenUBIProject/OpenUBI/raw/master/Policy-Brief-UBI-Impl.pdf" target="_blank" variant="primary">View Policy Brief (PDF)</b-button>
-      </b-card>
+      <a href="https://github.com/OpenUBIProject/OpenUBI/raw/master/Policy-Brief-UBI-Impl.pdf" target="_blank">
+        <b-card
+                title="Implementing Nationwide Universal Basic Income"
+                tag="article"
+                footer="View Policy Brief (PDF)"
+        >
+          <b-card-text>
+            <div>
+              This policy brief is a well-cited document that addresses:
+              <ul>
+                <li>advancements with work in the 21st century</li>
+                <li>why we need economic security</li>
+                <li>how technology enables UBI</li>
+                <li>best practices for creating UBI policies</li>
+              </ul>
+            </div>
+          </b-card-text>
+        </b-card>
+      </a>
     </div>
     <div class="col-12 col-md-4">
       <b-card
