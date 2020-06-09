@@ -28,17 +28,18 @@
       </a>
     </div>
     <div class="col-12 col-md-4">
-      <b-card
-              title="Action Framework"
-              tag="article"
-      >
-        <b-card-text>
-          <!-- TODO -->
-          This sample description describes the OpenUBI Action Framework that can be used to develop specific policy for implementing UBI.
-        </b-card-text>
-
-        <b-button href="#" variant="primary">Go somewhere</b-button>
-      </b-card>
+      <a href="#">
+        <b-card
+                title="Action Framework"
+                tag="article"
+                footer="Learn More"
+        >
+          <b-card-text>
+            <!-- TODO -->
+            This sample description describes the OpenUBI Action Framework that can be used to develop specific policy for implementing UBI.
+          </b-card-text>
+        </b-card>
+      </a>
     </div>
   </div>
 </template>
