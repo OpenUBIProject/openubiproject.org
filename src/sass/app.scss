@@ -7,8 +7,18 @@ body {
     font-size: 20px;
 }
 
-a:hover, :active {
+a:hover, a:focus, a:active {
     text-decoration: none;
+
+    .card {
+        &:hover, &:active, &:hover {
+            margin-top: ($card-stack-spacer - 12px);
+            margin-bottom: ($card-stack-spacer + 12px);
+            box-shadow: 0 15px 20px 4px rgba(0,0,0,.15);
+
+            transition: linear 100ms;
+        }
+    }
 }
 
 .card {
@@ -16,6 +26,7 @@ a:hover, :active {
     border-radius: 0;
     margin: $card-stack-spacer 0;
     box-shadow: 0 15px 15px 2px rgba(0, 0, 0, 0.05);
+    transition: linear 100ms;
 
     .card-body {
         padding: 1.25rem 1.25rem;
