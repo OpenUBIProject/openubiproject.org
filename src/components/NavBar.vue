@@ -81,7 +81,7 @@
     z-index: 1000;
     width: 85%;
     max-width: 400px;
-    top: 82px;
+    top: 81px;
     height: 100%;
 }
 
