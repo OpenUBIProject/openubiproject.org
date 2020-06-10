@@ -23,14 +23,18 @@
         <div class="navbar-offset mb-n4 d-lg-none"></div>
 
         <div class="sidebar-toggle d-lg-none" v-b-toggle.sidebar-right><span class="sidebar-toggle-icon"></span></div>
-        <b-sidebar id="sidebar-right" title="Sidebar" right shadow>
-            <div class="px-3 py-2">
-                <p>
-                    Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
-                    in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                </p>
-                <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
-            </div>
+        <b-sidebar id="sidebar-right" title="OpenUBI" right shadow>
+            <nav class="mb-3">
+                <b-nav vertical>
+                    <slot>
+                    </slot>
+                    <hr />
+                    <b-nav-item href="#">Twitter</b-nav-item>
+                    <b-nav-item href="#">Facebook</b-nav-item>
+                    <b-nav-item href="#">Discord</b-nav-item>
+                    <b-nav-item href="#">Github</b-nav-item>
+                </b-nav>
+            </nav>
         </b-sidebar>
     </div>
 </template>
