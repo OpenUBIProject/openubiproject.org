@@ -23,18 +23,22 @@
         <div class="navbar-offset mb-n4 d-lg-none"></div>
 
         <div class="sidebar-toggle d-lg-none" v-b-toggle.sidebar-right><span class="sidebar-toggle-icon"></span></div>
-        <b-sidebar id="sidebar-right" title="OpenUBI" right shadow>
-            <nav class="mb-3">
-                <b-nav vertical>
-                    <slot>
-                    </slot>
-                    <hr />
-                    <b-nav-item href="#">Twitter</b-nav-item>
-                    <b-nav-item href="#">Facebook</b-nav-item>
-                    <b-nav-item href="#">Discord</b-nav-item>
-                    <b-nav-item href="#">Github</b-nav-item>
-                </b-nav>
-            </nav>
+        <b-sidebar id="sidebar-right" title="OpenUBI" no-header right shadow>
+            <template v-slot:default="{ hide }">
+                <div>
+                    <nav class="mb-3 sidebar-nav">
+                        <b-nav vertical>
+                            <slot>
+                            </slot>
+                            <hr />
+                            <b-nav-item class="nav-item-first" href="#" @click="hide">Twitter</b-nav-item>
+                            <b-nav-item href="#" @click="hide">Facebook</b-nav-item>
+                            <b-nav-item href="#" @click="hide">Discord</b-nav-item>
+                            <b-nav-item href="#" @click="hide">Github</b-nav-item>
+                        </b-nav>
+                    </nav>
+                </div>
+            </template>
         </b-sidebar>
     </div>
 </template>
@@ -77,7 +81,7 @@
     z-index: 1000;
     width: 85%;
     max-width: 400px;
-    top: 0;
+    top: 82px;
     height: 100%;
 }
 
@@ -99,6 +103,31 @@
 
     &:focus {
         outline: none;
+    }
+}
+
+.sidebar-nav {
+    width: 100%;
+    position: absolute;
+
+    .nav-item:first-of-type, .nav-item-first {
+        margin-top: 10px;
+        border-top: solid 1px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-item {
+        text-align: left;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.05);
+
+        .nav-link {
+            font-size: 1.3rem;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .nav-link.active {
+            background-color: hsla(0, 0%, 0%, 0.05);
+        }
     }
 }
 
