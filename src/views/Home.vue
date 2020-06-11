@@ -6,7 +6,7 @@
         <h1>Sharing best practices for <em>implementing</em> Universal Basic Income around the world.</h1>
       </b-card>
     </div>
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-6 col-lg-4">
       <a href="https://github.com/OpenUBIProject/OpenUBI/raw/master/Policy-Brief-UBI-Impl.pdf" target="_blank">
         <b-card
                 title="Implementing Nationwide Universal Basic Income"
@@ -27,7 +27,7 @@
         </b-card>
       </a>
     </div>
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-6 col-lg-4">
       <a href="#">
         <b-card
                 title="Action Framework"
