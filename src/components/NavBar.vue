@@ -37,6 +37,7 @@
                             <b-nav-item href="#" @click="hide">Github</b-nav-item>
                         </b-nav>
                     </nav>
+                    <div class="sidebar-close-helper" @click="hide"></div>
                 </div>
             </template>
         </b-sidebar>
@@ -96,6 +97,19 @@
     right: 0;
 
     transition: linear 150ms;
+
+    .sidebar-nav {
+        z-index: 1000;
+    }
+
+    .sidebar-close-helper {
+        position: fixed;
+        z-index: 900;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 #sidebar-right {
