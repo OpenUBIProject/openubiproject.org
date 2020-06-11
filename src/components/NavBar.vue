@@ -79,7 +79,8 @@
 .b-sidebar-outer {
     position: fixed;
     z-index: 1000;
-    width: 85%;
+    width: 75%;
+    min-width: 200px;
     max-width: 400px;
     top: 81px;
     height: 100%;
@@ -88,13 +89,13 @@
 .collapsed + .b-sidebar-outer {
     right: -401px;
 
-    transition: linear 100ms;
+    transition: linear 150ms;
 }
 
 .not-collapsed + .b-sidebar-outer {
     right: 0;
 
-    transition: linear 100ms;
+    transition: linear 150ms;
 }
 
 #sidebar-right {
